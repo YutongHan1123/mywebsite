@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Portfolio Homepage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="brand">
+          <a href="index.html">  Yutong Han</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper">
+          <a href="index.html">Home</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <div class="container2">
+<!-- <center><p style="font-size: 20px;">Send email to me:</p></center> -->
+        <form id="contact" action="mailto:yxh703@miami.edu" method="post" enctype="text/plain">
+          Name:<br>
+        <input type="text" name="name" placeholder="Your name" tabindex="1" required autofocus><br>
+          E-mail:<br>
+        <input type="text" name="mail" placeholder="Your Email Address" type="email" tabindex="2" required><br>
+          Comment:<br>
+        <textarea id="comment" type="text" name="comment" size="50" placeholder="Type your message here...." tabindex="5" required></textarea>
+        <br>
+        <br>
+        <button type="submit" id="contact-submit" value="Send">Send</button>
+<!-- <input type="reset" value="Reset"> -->
+</form>
+  <!-- <form id="contact" action="" method="post">
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form> -->
+</div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
