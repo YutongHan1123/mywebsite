@@ -99,7 +99,7 @@ div.leftsub {
     padding-top: 15px;
     margin: 0 auto;
     width: 5%;
-    height: 150px;
+    height: 180px;
   }
   .sidenav a {
     font-size: 12px;
@@ -110,7 +110,7 @@ div.leftsub {
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   .sidenav {
     padding-top: 15px;
-    height: 240px;
+    height: 290px;
   }
   .sidenav a {
     font-size: 14px;
@@ -121,7 +121,7 @@ div.leftsub {
 @media screen and (min-width: 1201px) {
   .sidenav {
     padding-top: 15px;
-    height: 300px;
+    height: 360px;
   }
   .sidenav a {
     font-size: 18px;
@@ -137,6 +137,7 @@ article {
 }
 
 .two-column-wrapper2 {
+  margin-top: 80px;
   display: grid;
   grid-template-columns: 0.35fr 1.65fr;
 }
@@ -315,6 +316,7 @@ a {
   justify-content: space-between;
   padding-top: 25px;
   padding-left: 25px;
+  padding-right: 25px;
   padding-bottom: 10px;
   overflow: hidden;
   background-color: white;
@@ -361,7 +363,6 @@ a {
 .active-nav-link a {
   color: grey;
 }
-
 .nav-link-wrapper a {
   color: #8a8a8a;
   text-decoration: none;
