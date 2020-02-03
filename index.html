@@ -15,7 +15,8 @@
 </head>
 
 <body>
-  <div class="container">
+
+
     <div class="nav-wrapper">
       <div class="left-side">
         <div class="brand">
@@ -57,7 +58,7 @@
         </div>
       </header>
 
-
+<div class="container">
     <div class="content-wrapper">
       <div class="portfolio-items-wrapper">
 
@@ -251,22 +252,7 @@
 
 </body>
 
-<script>
-  const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-  portfolioItems.forEach(portfolioItem => {
-    portfolioItem.addEventListener('mouseover', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.add('image-blur');
-    });
-
-    portfolioItem.addEventListener('mouseout', () => {
-      console.log(portfolioItem.childNodes[1].classList)
-      portfolioItem.childNodes[1].classList.remove('image-blur');
-    });
-  });
-
-</script>
+<script src=js/port.js></script>
 <footer>
   <!-- <a href="http://www.polymer-project.org/" target="_blank"><img src="https://www.polymer-project.org/images/logos/p-logo.svg"></a> -->
   <p class="footer">- Yutong Han © 2020 | Last modified 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
