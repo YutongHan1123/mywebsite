@@ -1,0 +1,11 @@
+@media screen and (max-width: 600px) {
+  .rightwords {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 601px) {
+  .rightwords {
+    width: 600px;
+  }
+}

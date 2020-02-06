@@ -48,7 +48,7 @@ p.process {
 
 .projectprocess1 {
   display: grid;
-  grid-template-columns: 0.3fr 1.7fr;
+  grid-template-columns: 0.5fr 1.5fr;
 }
 .threeimg {
   display: grid;
@@ -63,7 +63,7 @@ div.leftsub {
 .rightwords {
   position: relative;
   margin-right: 10%;
-  width: 90%;
+  width: 800px;
   margin: auto;
   margin-top: 35px;
   margin-bottom: 40px;
