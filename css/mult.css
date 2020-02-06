@@ -1,11 +1,11 @@
 @media screen and (max-width: 600px) {
-  .rightwords {
+  .mainarticle {
     width: 90%;
   }
 }
 
 @media screen and (max-width: 900px) and (min-width: 601px) {
-  .rightwords {
+  .mainarticle {
     width: 600px;
   }
 }
