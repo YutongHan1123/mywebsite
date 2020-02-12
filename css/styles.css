@@ -213,6 +213,10 @@ div.profile-image-wrapper3 {
 
 .card-header {}
 
+.subtitle-date {
+  display: inline-grid;
+}
+
 .card-subtitle {
   font-size: 15px;
   font-family: 'Indie Flower', cursive;
@@ -221,7 +225,16 @@ div.profile-image-wrapper3 {
   padding: 0;
   font-weight: 200;
 }
-
+.right-date {
+  position: absolute;
+  right: 3%;
+  font-family: 'Indie Flower', cursive;
+  font-size: 14px;
+  font-weight: 100;
+  opacity: .6;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
 .card-title {
   font-family: sans-serif;
   font-weight: 200;
@@ -249,7 +262,8 @@ div.profile-image-wrapper3 {
   margin-top: 1.5rem;
   text-align: right;
   color: #333;
-  padding-right: 30px;
+  padding-right: 3%;
+  padding-bottom: 15px;
 }
 
 .read-more a {
@@ -548,7 +562,7 @@ button {
 }
 
 button:hover {
-  background: #7f78d2; 
+  background: #7f78d2;
   border: 1px solid #8b8b8b;
 }
 
