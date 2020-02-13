@@ -1,0 +1,102 @@
+li {
+  margin-top: 15px;
+  margin-left: 5%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.quote {
+  display:inline-block;
+  margin:1em;
+  overflow:hidden;
+}
+/* blockquote {
+  background-color:#fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+  blockquote::before {
+    background-color: #fff;
+    bottom: -10%;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: -10%;
+    transform: rotate(-15deg) skew(5deg);
+  }
+    cite {
+      display: block;
+      font-style: italic;
+      text-align: right;
+      &:before {
+        content: "- ";
+      }
+    > * {
+      position: relative;
+      z-index: 1;
+    } */
+
+.animated-border-quote {
+  display:inline-block;
+  margin:1em;
+  overflow:hidden;
+}
+
+blockquote {
+  background-color:#fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 1em;
+  position: relative;
+}
+
+blockquote::before {
+  animation:clockwise 30s infinite linear;
+  background-color: #fff;
+  bottom:10%;
+  content: "";
+  left: 0;
+  opacity:.5;
+  position: absolute;
+  right: 0;
+  top:10%;
+}
+blockquote::after {
+  animation:counter 30s infinite linear;
+  background-color: #fff;
+  bottom:10%;
+  content: "";
+  left: 0;
+  opacity:.5;
+  position: absolute;
+  right: 0;
+  top:10%;
+}
+
+cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+cite::before {
+  content: "- ";
+}
+
+@keyframes clockwise {
+  0% { transform:rotate(0); }
+  100% { transform:rotate(360deg); }
+}
+.clockwise {
+  animation-name: clockwise;
+}
+@keyframes counter {
+  0% {  transform:rotate(0); }
+  100% {  transform:rotate(-360deg); }
+}

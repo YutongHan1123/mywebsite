@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yutong Han's Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/mult.css">
+  <link rel="stylesheet" href="../../../css/blog.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <script src=../../../js/quote.js></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="brand">
+        <a href="http://yutong-han.com/">  Yutong Han</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="../../../blog.html">Blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../contact.html">Contact</a>
+        </div>
+        <!-- <button class="button"><a href=""><</a></button> -->
+        <button class="button"><a href="01.html"><</a></button>
+      </div>
+    </div>
+
+
+<div class="container">
+    <h1>When Huge Ambition and Poor Ability Meet</h1>
+
+    <div class="content-wrapper">
+      <div class="projectprocess1" >
+        <div class="leftsub">
+          <div class="subt">
+            <h2></h2>
+          </div>
+
+        </div>
+
+        <div class="mainarticle">
+          <p>I just saw a very interesting image today. It talks about a horse--
+          </p>
+        </div>
+      </div>
+      <img src="images/03/horse.png" class="process" alt="" style="max-width: 300px; margin: 0 auto;">
+      <p class="process">The Process of Capstone</p>
+<div class="projectprocess1" >
+      <div class="leftsub">
+        <div class="subt">
+          <h2></h2>
+        </div>
+
+      </div>
+
+      <div class="mainarticle">
+        <p>What is said is actually the truth. Now I’m at the step of scraping data from the Bilibili website. My professor Lenny told me Python is not a difficult language. Why did I trust him? Well, maybe because Python is easy and friendly to him, not me ╥﹏╥...
+        </p>
+        <br>
+        <p>My original proposal is full of ambition. I wanted to scrape data from 3 different resources:
+        </p>
+        <ol>
+          <li><strong>Bullet Screen</strong> (a specific feature on online video sites in China, which allows real-time comments from viewers to fly across the screen like bullets) when you watch the anime <em>“The Twelve Kingdoms”</em>.
+          </li>
+          <li><strong>The bottom comments</strong> when you open the anime page in Bilibili.</li>
+          <li><strong>The words</strong> from a series of fictions <em>“The Twelve Kingdoms”</em> that was made into an anime in 2002.</li>
+        </ol>
+      </div>
+</div>
+
+<img src="images/03/bullet.png" class="process" alt="" style="max-width: 600px;">
+<p class="process">Bullet Comments in Bilibili</p>
+<div class="projectprocess1" >
+<div class="leftsub">
+  <div class="subt">
+    <h2></h2>
+  </div>
+
+</div>
+
+<div class="mainarticle">
+  <p>First, for the data of <strong>on-time comments</strong> when you watch the anime <em>“The Twelve Kingdoms”</em>, I wanted to analyze which part is the largest number of comments each episode. From my experience of watching Bullet Screen, the key points often follow with a sea of bullet comments. I think it will be fun if I can get like the top 10 moments with the largest numbers of bullet comments.
+  </p>
+  <p>Second, for the data of <strong>bottom comments</strong> when you open the anime page in Bilibili, I wanted to know “when people talk about <em>‘The Twelve Kingdoms’</em>, what they talk about”. For me, <em>“The Twelve Kingdoms”</em> has not just an anime; I watched it when I was 14 years old. It’s my spiritual leader to some extent. The story begins with a teenage girl-- Youko Nakajima. She is an obedient daughter from parents’ eyes, an exemplary student in teachers’ eyes. However, she is confused about her existence. Does she love to study? No, she studies hard because her parents and teachers want her to do. Does she have friends? No, her classmates think she ratted on them to teachers. Who does she want to become in the future? She has no idea. One day, a Kirin, a mythological beast, appears. The Kirin select Youko as the king of country Qing. So Youko has to meet all sorts of people, face the challenge of natural and man-made disasters. During her adventure, she grows up at express speed. At the end of the first fiction, she has become a mature, proactive and responsible adult.
+  </p>
+</div>
+</div>
+
+<img src="images/03/youko.jpg" class="process" alt="" style="max-width: 500px;">
+<p class="process">Youko and Kirin</p>
+
+<div class="projectprocess1" >
+<div class="leftsub">
+  <div class="subt">
+    <h2></h2>
+  </div>
+
+</div>
+
+<div class="mainarticle">
+  <p>I really want to know what the bottom comments mentioned most. So I used Python to scrape the data from Bilibili. The bottom comments are nealy 200 pages. And it's Chinese. I have to say, Python is so painful... Anyway, it took me over three weeks to get the data.</p>
+  <img src="images/03/bottom.png" class="process" alt="" style="max-width: 400px;">
+  <p class="process">Rough Comments</p>
+
+  <p>And the rough word cloud chart shows this:</p>
+  <img src="images/03/01.png" class="process" alt="" style="max-width: 600px;">
+  <p class="process">Initial Wordcloud of Bottom Comments</p>
+
+  <p>The keywords are “Youko”, “Kirin”, “myself”, “grow”, “Rakushun” and so forth. I want to delete some words that not make sense, like “reply”. The high frequency of “reply” is because of the bug when people replied to other people’s comments, the line will show “reply B: …”
+  </p>
+  <br>
+  <p>Ideally, the word cloud chart should show the top 20 words in the bottom comments. And when people hover on the word, a tooltip will show up with some sentence with the word.
+  </p>
+<br>
+  <p>Third, for the data of <strong>the words from a series of fictions</strong> <em>“The Twelve Kingdoms”</em>, I want to use Python to do many things. In this part, I’m not ambitious, I can’t decide which road I ought to go until I finish the data analysis. I can count how many times the main characters appear in the novel, analyze the relationship among characters, or sentiment analysis to see if the novel is positive or negative. Since I don’t know what the answer is, I need to try those three ways.
+  </p>
+<br>
+  <p>I searched a lot, like <a href="https://www.freecodecamp.org/news/how-i-used-python-to-analyze-game-of-thrones-503a96028ce6/">“How I used Python to analyze Game of Thrones”</a>, <a href="https://www.w3cschool.cn/python3/python3-ilvp2z1w.html">“Simply read a novel with Python”</a>, <a href="https://github.com/hzjken/character-network">“Character Network with Harry Potter”</a>, <a href="https://towardsdatascience.com/basic-nlp-on-the-texts-of-harry-potter-sentiment-analysis-1b474b13651d">“Sentiment Analysis on the Texts of Harry Potter”</a>.</p>
+<br>
+  <p>In addition, I found an excellent tutorial, <a href="https://www.datacamp.com/projects/76">“A Network Analysis of Game of Thrones”</a>. The author analyzed the network of characters in Game of Thrones and how it changes throughout the books. I will analyze the fiction <em>“The Twelve Kingdoms”</em> this weekend. Hope I can get what I want.</p>
+  <br>
+  <p>Other than the data I have now and the data I should analyze, I need to begin to visualize the data I already have. I feel like the word cloud is not a perfect choice. Maybe the bubble or network diagram is a better choice. Anyway, I will talk with Professor Cairo this week, then test which chart makes sense.</p>
+  <br>
+  <p>Well, back to the horse I mentioned before. I hope my work won’t finally become the cartoon horse, even if I suspect the future will come true. I have less than 3 months to finish my capstone. Crossing fingers!</p>
+
+  <br>
+  <br>
+  <p>In the end, enjoy the sentences in <em>“The Twelve Kingdoms”</em> that I like:</p>
+
+
+  <div class="animated-border-quote">
+    <blockquote>
+      <p>“It's not true that you were the good child. Not a good child at all. You were scared of rejection, so you made yourself a convenient child for your parents to have around."
+      </p>
+      <cite>Kiyohide</cite>
+    </blockquote>
+
+    <blockquote>
+      <p>“And that's when I realized that there's really two ways people cry. You cry when you're sorry for yourself, and then you cry when you are really sad. The tears you cry for yourself? Those are kid tears. You're crying because you want somebody to help you or pick you up. Your mom, your dad, the old lady next door... anyone.”
+      </p>
+      <cite>Blue Monkey</cite>
+    </blockquote>
+
+    <blockquote>
+      <p>“You know, Youko. When you don't know which choice is the best, then you should choose the path you ought to take, rather than the one you wish for. You're going to regret the path not taken. But regrets being more or less equal, better the one where the regret is even a bit less.”
+      </p>
+      <cite>Rakushun</cite>
+    </blockquote>
+  </div>
+
+</div>
+</div>
+
+</div>
+
+    </div>
+    </div>
+
+  </div>
+<!-- <button class="button"><a href="port02.html">></a></button> -->
+</body>
+<footer>
+  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+</footer>
+</html>
