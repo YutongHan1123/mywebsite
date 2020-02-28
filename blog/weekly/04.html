@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yutong Han's Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/mult.css">
+  <link rel="stylesheet" href="../../../css/blog.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+
+    <script src=../../../js/quote.js></script>
+</head>
+
+<body>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="brand">
+        <a href="http://yutong-han.com/">  Yutong Han</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="../../../blog.html">Blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../contact.html">Contact</a>
+        </div>
+        <!-- <button class="button"><a href=""><</a></button> -->
+        <button class="button"><a href="03.html"><</a></button>
+        <button class="button"><a href="05.html">></a></button>
+      </div>
+    </div>
+
+
+<div class="container">
+    <h1>The Endlessly Painful Road of Python and R</h1>
+
+    <div class="content-wrapper">
+      <div class="projectprocess1" >
+        <div class="leftsub">
+          <div class="subt">
+            <h2></h2>
+          </div>
+
+        </div>
+
+        <div class="mainarticle">
+          <p>Since I finished the process of scraping data with Python from Bilibili website last week, I began to think about how to visualize them, I searched a lot and also talked with Professor Cairo and Clay to get professional advice. The truth is, professional advice means more and more work.
+          </p>
+<br>
+          <p>In the beginning, I wanted to use a wordcloud chart to visualize the frequency of the keywords in the bottom comments. However, I felt like a bubble chart might be a better choice. The larger the bubble is, the higher the frequency is. It’s perfect to compare the different frequencies without the distraction of the length of the keywords. For example, “The Twelve Kingdoms” is longer than “myself”. It might influence people’s judgment.
+          </p>
+        </div>
+      </div>
+      <img src="images/04/word.png" class="process" alt="">
+      <p class="process">“The Twelve Kingdoms” looks bigger than “myself”, even if they are in the same font size.</p>
+<div class="projectprocess1" >
+      <div class="leftsub">
+        <div class="subt">
+          <h2></h2>
+        </div>
+
+      </div>
+
+      <div class="mainarticle">
+        <p>After choosing the bubble chart, I searched for some examples. I did love the forced bubble charts. They look like slightly move towards each other with gravitational force. The force direct-tree bubble chart is also full of fun. The advantage of the force direct-tree bubble chart is to show the hierarchy of the data. But how to find the hierarchy of the data, I had no idea. so I considered manually categorize those bubbles into different groups, including characters, specific nouns (Qi, Shitsudou), strong emotion and so forth.
+        </p>
+        <br>
+        <p>My original proposal is full of ambition. I wanted to scrape data from 3 different resources:
+        </p>
+      </div>
+</div>
+
+<img src="images/04/bubble.png" class="process" alt="">
+<p class="process">Different bubble charts (forced, direct-tree, packed)</p>
+<div class="projectprocess1" >
+<div class="leftsub">
+  <div class="subt">
+    <h2></h2>
+  </div>
+
+</div>
+
+<div class="mainarticle">
+  <p>In this case, I thought I just need to make those bubbles appear, then add detailed tooltips to express them, and they are done. Nevertheless, Professor Cairo told me, I needed to show the proximity of those keywords. When he said: ”proximity”, my face was w(ﾟДﾟ)w ??? “Proximity, what’s that?”
+  </p>
+  <br>
+  <p>And he smiled upon me:” You need to show the relationship among those bubbles, instead of randomly fly with each other. Find a way to do that”.
+  </p>
+  <br>
+  <p>Okay, I would do that. With this question, I began to search on how to find the relationship between words. Quickly I found some ways might do that. They are:
+  </p>
+    <ul>
+      <li style="margin-top: 5px;"><a href="https://www.cnblogs.com/jclian91/p/11107323.html">Information Extraction</a></li>
+      <li style="margin-top: 5px;"><a href="https://www.datacamp.com/community/tutorials/hierarchical-clustering-R">Hierarchical Clustering</a></li>
+      <li style="margin-top: 5px;"><a href="https://blog.exploratory.io/demystifying-text-analytics-finding-similar-documents-with-cosine-similarity-e7b9e5b8e515">Documents similarity</a></li>
+    </ul>
+    <br>
+    <p>
+    Since I don’t have the same beginning of the sentence like the project “why do cats & dogs…”, I felt like the relationship between keywords is not parent and child. So hierarchical clustering might not be the right choice. At the same time, I don’t want to just do documents similarity. Well, for example, “Youko” and “Kirin” are not similar, but they are highly related to each other, because they are the hero and heroine. So I asked for my classmate Deb, who did a wonderful project about Anne Sexton’s poems last semester, for help. And she recommended me to try <a href="https://www.tidytextmining.com/ngrams.html">N-grams</a> (a concept found in Natural Language Processing).
+  </p>
+</div>
+</div>
+
+<img src="images/04/ngram.png" class="process" alt="" style="max-width: 500px;">
+<p class="process">Common bigrams in Jane Austen’s novels by n-grams in R</p>
+
+<div class="projectprocess1" >
+<div class="leftsub">
+  <div class="subt">
+    <h2></h2>
+  </div>
+
+</div>
+
+<div class="mainarticle">
+  <p>It’s my current pace. Learn n-grams in R. luckily, I’m not lagging behind. Deb also encouraged me it’s just the most difficult part of the text analysis. After this part, things will go much faster.</p>
+
+  <p>That’s it. Keep working;)</p>
+<br><br><br>
+</div>
+</div>
+
+</div>
+
+    </div>
+    </div>
+
+  </div>
+<!-- <button class="button"><a href="port02.html">></a></button> -->
+</body>
+<footer>
+  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+</footer>
+</html>
