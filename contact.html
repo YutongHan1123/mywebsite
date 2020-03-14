@@ -7,29 +7,60 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
   <link rel="stylesheet" href="/css/form.css">
+  <link rel="stylesheet" href="/css/language.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/language.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="nav-wrapper">
       <div class="left-side">
-        <div class="brand">
-          <a href="index.html">  Yutong Han</a>
+        <div class="brand text-on ui-corner-all">
+          <a href="http://yutong-han.com/">Yutong Han</a>
+        </div>
+
+        <div class="brand text-off ui-corner-all">
+          <a href="http://yutong-han.com/">韩雨彤</a>
         </div>
       </div>
 
       <div class="right-side">
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper text-on ui-corner-all">
           <a href="blog.html">Blog</a>
         </div>
 
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper text-on ui-corner-all">
           <a href="about.html">About</a>
         </div>
 
-        <div class="nav-link-wrapper active-nav-link">
+        <div class="nav-link-wrapper active-nav-link text-on ui-corner-all">
           <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-link-wrapper text-off ui-corner-all">
+          <a href="blog.html">日志</a>
+        </div>
+
+        <div class="nav-link-wrapper text-off ui-corner-all">
+          <a href="about.html">简介</a>
+        </div>
+
+      <div class="nav-link-wrapper active-nav-link text-off ui-corner-all">
+        <a href="contact.html">联系</a>
+      </div>
+
+        <div class="nav-link-wrapper">
+            <label id="language-toggle" class="switch-toggle switch-candy" onclick="">
+              <input type="checkbox">
+              <span>
+                <span>&nbsp;&nbsp;English&nbsp;&nbsp;</span>
+                <span>&nbsp;中文&nbsp;&nbsp;&nbsp;</span>
+              </span>
+              <a></a>
+            </label>
         </div>
       </div>
     </div>
@@ -54,7 +85,7 @@
   </form>
         </div>
 
-        <div class="profile-content-wrapper">
+        <div class="profile-content-wrapper text-on ui-corner-all">
           <br>
           <br>
           <br>
@@ -62,12 +93,29 @@
           <h1 style="text-align: left;">Get in touch:</h1>
           <br>
           <div style="font-size: 15px;">
-          <p>Email: yxh703@miami.edu</p>
-          <p><a href="https://twitter.com/KoreanChocolat2">Twitter</a></p>
-          <p><a href="https://www.linkedin.com/in/yutonghan1123/">Linkedin</a></p>
+          <p>Email: <a href="mailto:yxh703@miami.edu">yxh703@miami.edu</a></p>
+          <p>Twitter: <a href="https://twitter.com/KoreanChocolat2">Korean Chocolate</a></p>
+          <p>Linkedin: <a href="https://www.linkedin.com/in/yutonghan1123/">Yutong Han</a></p>
+          <p>Github: <a href="https://github.com/YutongHan1123">YutongHan1123</a></p>
 
         </div>
       </div>
+
+      <div class="profile-content-wrapper text-off ui-corner-all">
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="text-align: left;">联系我：</h1>
+        <br>
+        <div style="font-size: 15px;">
+        <p>邮箱: <a href="mailto:yxh703@miami.edu">yxh703@miami.edu</a></p>
+        <p>推特: <a href="https://twitter.com/KoreanChocolat2">Korean Chocolate</a></p>
+        <p>领英: <a href="https://www.linkedin.com/in/yutonghan1123/">Yutong Han</a></p>
+        <p>Github: <a href="https://github.com/YutongHan1123">YutongHan1123</a></p>
+
+      </div>
+    </div>
     </div>
 
     <div class="content-wrapper">
@@ -82,6 +130,7 @@
 </body>
 <footer style="margin-top:220px;">
   <!-- <a href="http://www.polymer-project.org/" target="_blank"><img src="https://www.polymer-project.org/images/logos/p-logo.svg"></a> -->
-  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-on ui-corner-all">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-off ui-corner-all">- 由韩雨彤设计与编程 © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
 </footer>
 </html>

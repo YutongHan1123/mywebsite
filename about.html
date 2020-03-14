@@ -6,39 +6,66 @@
   <title>Yutong Han</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/language.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/language.js"></script>
 </head>
 
 <body>
   <div class="container">
     <div class="nav-wrapper">
       <div class="left-side">
-        <div class="brand">
-          <a href="index.html">  Yutong Han</a>
+        <div class="brand text-on ui-corner-all">
+          <a href="http://yutong-han.com/">  Yutong Han</a>
+        </div>
+
+        <div class="brand text-off ui-corner-all">
+          <a href="http://yutong-han.com/">韩雨彤</a>
         </div>
       </div>
 
       <div class="right-side">
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper text-on ui-corner-all">
           <a href="blog.html">Blog</a>
         </div>
 
-        <div class="nav-link-wrapper active-nav-link">
+        <div class="nav-link-wrapper active-nav-link text-on ui-corner-all">
           <a href="about.html">About</a>
         </div>
 
-        <div class="nav-link-wrapper">
+        <div class="nav-link-wrapper text-on ui-corner-all">
           <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="nav-link-wrapper text-off ui-corner-all">
+          <a href="blog.html">日志</a>
+        </div>
+
+        <div class="nav-link-wrapper active-nav-link text-off ui-corner-all">
+          <a href="about.html">简介</a>
+        </div>
+
+      <div class="nav-link-wrapper text-off ui-corner-all">
+        <a href="contact.html">联系</a>
+      </div>
+
+        <div class="nav-link-wrapper">
+            <label id="language-toggle" class="switch-toggle switch-candy" onclick="">
+              <input type="checkbox">
+              <span>
+                <span>&nbsp;&nbsp;English&nbsp;&nbsp;</span>
+                <span>&nbsp;中文&nbsp;&nbsp;&nbsp;</span>
+              </span>
+              <a></a>
+            </label>
         </div>
       </div>
     </div>
 
-  <!-- <img src="images/profile.jpg" alt=""> -->
-<!-- <img src="images/profile.jpg" alt=""> -->
-<h1>Full of Passion for Data-viz:)</h1>
+<h1 class="text-on ui-corner-all">Full of Passion for Data-viz:)</h1>
+<h1 class="text-off ui-corner-all">喜欢数据可视化的雨彤:)</h1>
     <div class="content-wrapper">
       <div class="two-column-wrapper" >
         <div class="profile-image-wrapper">
@@ -46,7 +73,7 @@
 
         </div>
 
-        <div class="profile-content-wrapper">
+        <div class="profile-content-wrapper text-on ui-corner-all">
           <p>Hi! This is Yutong Han.</p>
           <p>My major is <strong>Interactive Media</strong> at the University of Miami now after I graduated with a bachelor's degree in Psychology from <a href="http://www.cupl.edu.cn/">CUPL</a> in Beijing.</p>
           <p>I'm a second-year graduate student, focusing on <strong>data visualization</strong>.
@@ -64,6 +91,23 @@
         </div>
 
         </div>
+
+        <div class="profile-content-wrapper text-off ui-corner-all">
+          <p>你好呀，我是韩雨彤。</p>
+          <p>目前是迈阿密大学的研二学生，正为了毕业设计和找工作掉头发。噢，目前我还在帮海洋学院的珊瑚项目做网站，正赶上疫情，真是太考验我的自制力了。</p>
+          <p>我非常喜欢数据可视化，数据无法说谎，而故事充满了人情味。我希望我可以通过数据讲述真实而动人的故事。</p>
+
+          <p>除了数据可视化外，我还很喜欢辣的食物、狗狗、B站、小说和爵士舞。在被代码所折磨的夜晚，是它们陪伴我度过。</p>
+          <br>
+          <p>你可以点<a href="resume.html">这里</a>查看我网页版简历.</p>
+          <br>
+          <p>或者可以下载我PDF版的简历：</p>
+
+        <div class="framebox">
+          <p><iframe src="pdf/Resume.pdf" width="100%" height="300px">韩雨彤的简历</iframe></p>
+        </div>
+
+        </div>
       </div>
     </div>
   </div>
@@ -71,6 +115,7 @@
 </body>
 <footer>
   <!-- <a href="http://www.polymer-project.org/" target="_blank"><img src="https://www.polymer-project.org/images/logos/p-logo.svg"></a> -->
-  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-on ui-corner-all">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-off ui-corner-all">- 由韩雨彤设计与编程 © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
 </footer>
 </html>

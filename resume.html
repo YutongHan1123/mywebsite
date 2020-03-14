@@ -5,7 +5,11 @@
   <title>Yutong Han</title>
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/language.css">
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+  <script type="text/javascript" src="/js/language.js"></script>
 
     <title>Yutong Han's Resume</title>
 
@@ -30,28 +34,55 @@
     <div class="container">
         <div class="nav-wrapper">
           <div class="left-side">
-            <div class="brand">
-              <a href="http://yutong-han.com">  Yutong Han</a>
+            <div class="brand text-on ui-corner-all">
+              <a href="http://yutong-han.com/">  Yutong Han</a>
+            </div>
+
+            <div class="brand text-off ui-corner-all">
+              <a href="http://yutong-han.com/">韩雨彤</a>
             </div>
           </div>
 
           <div class="right-side">
-            <div class="nav-link-wrapper">
+            <div class="nav-link-wrapper text-on ui-corner-all">
               <a href="blog.html">Blog</a>
             </div>
 
-            <div class="nav-link-wrapper active-nav-link">
+            <div class="nav-link-wrapper active-nav-link text-on ui-corner-all">
               <a href="about.html">About</a>
             </div>
 
-            <div class="nav-link-wrapper">
+            <div class="nav-link-wrapper text-on ui-corner-all">
               <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="nav-link-wrapper text-off ui-corner-all">
+              <a href="blog.html">日志</a>
+            </div>
+
+            <div class="nav-link-wrapper active-nav-link text-off ui-corner-all">
+              <a href="about.html">简介</a>
+            </div>
+
+          <div class="nav-link-wrapper text-off ui-corner-all">
+            <a href="contact.html">联系</a>
+          </div>
+
+            <div class="nav-link-wrapper">
+                <label id="language-toggle" class="switch-toggle switch-candy" onclick="">
+                  <input type="checkbox">
+                  <span>
+                    <span>&nbsp;&nbsp;English&nbsp;&nbsp;</span>
+                    <span>&nbsp;中文&nbsp;&nbsp;&nbsp;</span>
+                  </span>
+                  <a></a>
+                </label>
             </div>
           </div>
         </div>
 
 <div class="resume">
-    <div class="resume1">
+    <div class="resume1 text-on ui-corner-all">
     <h1 style="text-align: left;">Experience</h1>
     <h3>Marine Biology and Ecology Department, University of Miami,</h3>
     <p><strong>-Infographic Designer, Web developer</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Sept.2019- Now • Miami, America</i></p>
@@ -59,25 +90,22 @@
     <p>• Updated the website pages</p>
     <p>• Quickly absorbed the coral info and revised the layout with the help of experts</p>
     <br>
+    <br>
 
     <h3>Ibis Book Office, University of Miami,</h3>
     <p><strong>-Page Designer, Coder</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Jun.2019- Now • Miami, America</i></p>
     <p>• Involved in page design, website design</p>
     <p>• Updated the website pages</p>
     <br>
-
-    <h3>Baotou Weiyunzhichuang Co., Ltd,</h3>
-    <p><strong>-Logo Animated Designer</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Jun.2019- Aug.2019 • Baotou, China</i></p>
-    <p>• Involved in Logo design and video animation</p>
-    <p>• Acquired the deep knowledge of website development, including js, php</p>
-    <p>• Collaborated with other members and modified versions quickly </p>
     <br>
 
-    <h3>Guizhou Huading Decorative Co., Ltd</h3>
+    <h3>Huading Construction Decoration Engineering Co., Ltd,</h3>
     <p><strong>-Assistant Designer</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Jun.2017- Jan.2018 • Guizhou, Guiyang, China</i></p>
     <p>• Involved in APP design and user interface design</p>
     <p>• Acquired the early stage knowledge of APP development</p>
     <p>• Joined the online decoration marketing activities design and operation</p>
+    <br>
+    <br>
     <br>
     <br>
 
@@ -107,7 +135,7 @@
     <br>
     </div>
 
-    <div class="resume2">
+    <div class="resume2 text-on ui-corner-all">
     <h1 style="text-align: left;">Skills</h1>
     <h3>Data Analysis</h3>
     <p>• Excel</p>
@@ -152,6 +180,7 @@
 
     <h3>Map</h3>
     <p>• ArcGIS</p>
+    <p>• Flourish</p>
     <br>
 
     <h3>UI Design</h3>
@@ -162,9 +191,119 @@
     <p>• Engish</p>
     <p>• Mandarin</p>
     </div>
+
+
+    <div class="resume1 text-off ui-corner-all">
+    <h1 style="text-align: left;">工作经历</h1>
+    <h3>海洋生物与生态部门，迈阿密大学</h3>
+    <p><strong>-信息图设计，网页开发</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>2019年9月 - 现在·迈阿密，佛罗里达州</i></p>
+    <p>• 设计海报、构建网站</p>
+    <p>• 更新网站</p>
+    <p>• 通过海洋专家了解关于珊瑚的专业知识，将其转化为大众化语言融入视觉设计中</p>
+    <br>
+    <br>
+
+    <h3>Ibis年鉴办公室，迈阿密大学</h3>
+    <p><strong>-网页更新，内页设计</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>2019年6月- 2019年9月·迈阿密，佛罗里达州</i></p>
+    <p>• 参与内页设计，新网页设计</p>
+    <p>• 通过wordpress构建新网站</p>
+    <br>
+    <br>
+
+
+    <h3>华鼎建筑装饰工程有限公司</h3>
+    <p><strong>-UI设计助理</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>2017年助理 - 2018年1月·贵州，贵阳</i></p>
+    <p>• 参与APP设计和用户交互设计</p>
+    <p>• 学习APP开发的基础知识</p>
+    <p>• 参与线上宣传活动的设计与运营</p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h1 class="resumeh1">教育经历</h1>
+    <h3>迈阿密大学</h3>
+    <p><i>2018年8月 - 2020年5月（预计） • 迈阿密，佛罗里达州</i></p>
+    <p>M.F.A. 交互式媒体</p>
+
+    <h3>中国政法大学</h3>
+    <p><i>2013年9月 - 2017年6月 · 北京，中国</i></p>
+    <p>应用心理学</p>
+    <br>
+    <br>
+
+    <h1 style="text-align: left;">其他活动</h1>
+    <h3>学生委员会 | 宣传部部长</h3>
+    <p>和其他部门共同合作宣传早起活动、绘制海报、拍摄及同步更新至 微信、微博、人人等官方账号</p>
+    <br>
+
+    <h3>第十五次学生代表大会 | 宣传部部员</h3>
+    <p>设计LOGO，为参选人拍照修图</p>
+    <p>大会期间在人人的官方账号同步直播，并同时将拍摄好的照片、视 频写成新闻稿上传至微信和微博</p>
+    <br>
+    <br>
+    </div>
+
+    <div class="resume2 text-off ui-corner-all">
+    <h1 style="text-align: left;">技能</h1>
+    <h3>数据分析</h3>
+    <p>• Excel</p>
+    <P>• Python</P>
+    <br>
+
+    <h3>数据可视化</h3>
+    <p>• D3.js</p>
+    <p>• R</p>
+    <br>
+
+    <h3>网页设计 & 开发</h3>
+    <p>• HTML</p>
+    <P>• CSS</P>
+    <br>
+
+    <h3>编程</h3>
+    <p>• PHP</p>
+    <P>• JavaScript</P>
+    <p>• Swift</p>
+    <br>
+
+    <h3>绘画</h3>
+    <p>• Procreate</p>
+    <p>• Adobe Photoshop</p>
+    <br>
+
+    <h3>Adobe软件</h3>
+    <p>• Adobe Illustrator</p>
+    <p>• Adobe Photoshop</p>
+    <p>• Adobe InDesign</p>
+    <p>• Adobe XD</p>
+    <p>• Adobe Animate</p>
+    <p>• Adobe After Effects</p>
+    <p>• Adobe Premiere</p>
+    <br>
+
+    <h3>3D建模</h3>
+    <p>• Maya</p>
+    <p>• Sculptris</p>
+    <br>
+
+    <h3>地图绘制</h3>
+    <p>• ArcGIS</p>
+    <br>
+
+    <h3>UI设计</h3>
+    <p>• Sketch</p>
+    <p>• Figma</p>
+
+    <h3>语言</h3>
+    <p>• Engish</p>
+    <p>• Mandarin</p>
+    </div>
 </div>
 </body>
 <footer>
-  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-on ui-corner-all">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+  <p class="footer text-off ui-corner-all">- 由韩雨彤设计与编程 © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
 </footer>
 </html>
