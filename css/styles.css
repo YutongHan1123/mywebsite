@@ -114,36 +114,45 @@ div.leftsub {
     padding-top: 15px;
     margin: 0 auto;
     width: 5%;
-    height: 180px;
+    height: 212px;
     text-align: center;
   }
   .sidenav a {
     font-size: 12px;
     margin-left: 10%;
   }
+  .sidenav_selected {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 601px) and (max-width: 1200px) {
   .sidenav {
     padding-top: 15px;
-    height: 290px;
+    height: 330px;
     text-align: center;
   }
   .sidenav a {
     font-size: 14px;
     padding: 10px 10px 10px 10px;
   }
+  .sidenav_selected {
+    padding: 0 20px;
+  }
 }
 
 @media screen and (min-width: 1201px) {
   .sidenav {
     padding-top: 15px;
-    height: 360px;
+    height: 425px;
     text-align: center;
   }
   .sidenav a {
     font-size: 18px;
     padding: 30px 30px 0px 30px;
+  }
+  .sidenav_selected {
+    padding: 0 20px;
   }
 }
 
@@ -304,6 +313,11 @@ div.profile-image-wrapper3 {
 
 .sidenav a:hover {
   color: #f1f1f1;
+}
+
+.sidenav_selected {
+  color: #7f78d2;
+  background-color: white;
 }
 
 a {
