@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yutong Han's Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/mult.css">
+  <link rel="stylesheet" href="../../../css/blog.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="brand">
+        <a href="http://yutong-han.com/">  Yutong Han</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="../../../blog.html">Blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../contact.html">Contact</a>
+        </div>
+
+        <button class="button"><a href="07.html"><</a></button>
+        <button class="button"><a href="09.html">></a></button>
+      </div>
+    </div>
+
+
+<div class="container">
+    <h1>About Design, I'm thinking about...</h1>
+
+    <div class="content-wrapper">
+      <div class="projectprocess1" >
+        <div class="leftsub">
+          <div class="subt">
+            <h2></h2>
+          </div>
+
+        </div>
+
+        <div class="mainarticle">
+          <p>After scratching data from the website, I used R to do proximity analysis to find out the relationships among words. The following image is what I got in R.
+          </p>
+          <br />
+          <img src="../../images/12/n-gram.png" class="process" alt="" />
+          <p class="process">Rough n-gram chart I created through R</p>
+
+          <p>From the result, I thought the bubble chart is a great choice to present the relationships among words. The center bubble should be the biggest bubble (often represent the main character like Youko, Kirin), other smaller bubbles are connected by it. All bubbles and the lines should be interactive, users can interact with them to get more info.</p>
+          <br />
+          <img src="../../images/12/bubble.png" class="process" alt="" style="width: 450px;"/>
+          <p class="process">One bubble chart I tried</p>
+
+          <p>In this case, I will focus on the tree structure to visualize my data of the novels and the comments in Bilibili.</p>
+
+          <ul style="margin:0 10%;">
+            <li>First of all, I will introduce the work The Twelve Kingdoms. Because it’s an unpopular work in the eastern anime market. I will shortly introduce the world view and special settings.
+            </li>
+            <img src="../../images/12/1.png" class="process" alt="">
+            <br />
+            <li>Secondly, I will cut tons of bubbles into different groups to help users to understand. I don’t want to show everything at the beginning and make audiences feel lost. So, secondary groups will help a lot. At the same time, I will add detailed descriptions for these groups to help audiences further understanding.
+              <p>For example, the author didn’t finish the story about Taiki and the king of Tai. So a lot of audiences complained that they fell into the pit, which is dug by Ono. And now they can’t leave. It’s pretty fun.</p>
+            </li>
+            <img src="../../images/12/2.png" class="process" alt="">
+            <li>At the bottom part, I want readers can leave their comments about the data visualization of The Twelve Kingdoms. They can go through each other’s comments.
+            </li>
+            <img src="../../images/12/3.png" class="process" alt="">
+          </ul>
+        </div>
+      </div>
+<div class="projectprocess1" >
+      <div class="leftsub">
+        <div class="subt">
+          <h2></h2>
+        </div>
+
+      </div>
+
+      <div class="mainarticle">
+        <p>I met some troubles when I want to scrape mandarin from the website. Because it’s different from English. I tried to create bubbles by D3 after solving the n-gram problem. The challenge at this step is to create force among bubbles and change the stroke between them into different thickness. Because I created treemap charts by D3 last semester, I wasn’t stuck with the json file for a long time.</p>
+      </div>
+</div>
+
+</div>
+
+</div>
+
+    </div>
+    </div>
+
+  </div>
+<!-- <button class="button"><a href="port02.html">></a></button> -->
+</body>
+<footer>
+  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+</footer>
+</html>

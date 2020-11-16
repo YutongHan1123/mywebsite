@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yutong Han's Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/styles.css">
+  <link rel="stylesheet" href="../../../css/mult.css">
+  <link rel="stylesheet" href="../../../css/blog.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="nav-wrapper">
+      <div class="left-side">
+        <div class="brand">
+        <a href="http://yutong-han.com/">  Yutong Han</a>
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="nav-link-wrapper active-nav-link">
+          <a href="../../../blog.html">Blog</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../about.html">About</a>
+        </div>
+
+        <div class="nav-link-wrapper">
+          <a href="../../contact.html">Contact</a>
+        </div>
+
+        <button class="button"><a href="08.html"><</a></button>
+        <button class="button"><a href="10.html">></a></button>
+      </div>
+    </div>
+
+
+<div class="container">
+    <h1>Even if some problems about data, I begin to build the website</h1>
+
+    <div class="content-wrapper">
+      <div class="projectprocess1" >
+        <div class="leftsub">
+          <div class="subt">
+            <h2></h2>
+          </div>
+
+        </div>
+
+        <div class="mainarticle">
+          <p>As I mentioned before, I met tons of troubles I never imaged before. I overcame most of them, and some still need to do more work. I divided those troubles into three groups: scrape and clean the data, build the website, improve the website.</p>
+          <br />
+
+          <ul style="margin:0 10%;">
+            <li>Scrape and Clean the Data
+              <p>I spent nearly the whole of February to scrape and clean the data from the website Bilibili. And I met 3 problems:</p>
+              <ol style="margin:0 10%;">
+                <li>Scraping Chinese is different from English. I learn how to use library pandas to scrape Chinese.</li>
+                <li>Because I’m in the US now, I can’t load the comments unless use VPN. So, I asked my friend in China to run the code on his computer.</li>
+                <li>Another problem is I have no idea how to do n-gram in Python. Even though I watched some tutorials, it’s still so hard for me to understand. Fortunately, Deb recommended the book <em><a href="https://www.tidytextmining.com/ngrams.html">Text Mining with R to me</a></em>. Do n-gram by R is much easier. In this way, I successfully found out the relationships between characters, and words.</li>
+                <br />
+              </ol>
+              <img src="../../images/12/n-gram2.png" class="process" alt="">
+              <p class="process">Clean and roughly visualize the data by R</p>
+            </li>
+            <br />
+            <li>Build the Website
+              <p>Then I focused on the visualization by d3 and website building during March. I tried different style charts, change the thickness of the line between bubbles, organize the context and charts.</p>
+              <p>I tried to create bubbles by D3 after solving the n-gram problem. The challenge at this step is to create force among bubbles and change the stroke between them into different thicknesses. Because I created treemap charts by D3 last semester, I wasn’t stuck with the JSON file for a long time.</p>
+              <p>I know my article will be very long, since there are seven book series, bullet screen comments and bottom comments will be visualized and analyzed. So, I need to organize my website very convenient for users to go through.</p>
+              <img src="../../images/12/layout.png" class="process" alt="">
+              <p class="process">Build the website, combine the charts and contents.</p>
+            </li>
+            <br />
+          </ul>
+        </div>
+      </div>
+<div class="projectprocess1" >
+      <div class="leftsub">
+        <div class="subt">
+          <h2></h2>
+        </div>
+
+      </div>
+
+      <div class="mainarticle">
+        <p>Luckily I can focus on the visualization by d3 and website building now! I'm really happy. Even if I met some small troubles about D3,  I wasn’t stuck with them for a long time. D3 is much friendly than Python. Lenny told me Python is a friendly language, I doubt that now:(</p>
+      </div>
+</div>
+
+</div>
+
+</div>
+
+    </div>
+    </div>
+
+  </div>
+<!-- <button class="button"><a href="port02.html">></a></button> -->
+</body>
+<footer>
+  <p class="footer">- Designed and Coded by Yutong Han © 2020 by <a href="https://github.com/YutongHan1123/mywebsite" target="_blank">Github</a> -</p>
+</footer>
+</html>

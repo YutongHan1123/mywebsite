@@ -35,14 +35,14 @@
           <a href="../../contact.html">Contact</a>
         </div>
 
-        <button class="button"><a href="05.html"><</a></button>
-        <button class="button"><a href="07.html">></a></button>
+        <button class="button"><a href="06.html"><</a></button>
+        <button class="button"><a href="08.html">></a></button>
       </div>
     </div>
 
 
 <div class="container">
-    <h1>Back to the beginning, why I want to do data visualization for <em>The Twelve Kingdoms</em></h1>
+    <h1>Still Working on Data, Got little Progress</h1>
 
     <div class="content-wrapper">
       <div class="projectprocess1" >
@@ -54,28 +54,24 @@
         </div>
 
         <div class="mainarticle">
-          <p>When I was a child, I met the anime “The Twelve Kingdoms”. It’s a different anime, totally different from others. The anime pushed me to read the original book series. It has interesting and dangerous adventures, with rich contents of awaking feminine consciousness and ancient Asian cultural value. Even today, it’s still my favorite anime.
+          <p>I talked about how I have the idea to work on this project, and I will talk about how I get the data, how to analyze them and little progress I got this week.
           </p>
-          <img src="../../images/12/cover.png" class="process" alt="">
-          <p class="process">The Cover of the First Book of The Twelve Kingdoms</p>
           <br>
-          <p>When professor Lenny asked me, what I want to do for the capstone. I have no idea. he told me I can do anything, anything I’m interested in or loved. His words reminded me of the anime. Yes, it’s the last chance for me to have fun before graduation. I need to earn a living after graduation. So, why not creating a data viz project for my favorite anime? I began to search for other data viz projects related to book series, film, and television works. Actually, I found two precedents that influenced my capstone.
+          <p>After going through precedents, I began to organize my project. I wanted to <strong>analyze both book series and anime</strong>. But the original book series are Japanese, I can’t understand. And the Chinese version book series I didn’t find relative packages in R (a programming language, widely used among statisticians and data miners for developing statistical software and data analysis) to analyze them. Luckily, I found fan translation, <strong>English version book series</strong> of The Twelve Kingdoms on the website Eugene Woodbury.
           </p>
+          <br>
+          <p>For the anime, I know an interesting Chinese video-sharing website called Bilibili. Bilibili is like Chinese YouTube, which is based in Shanghai, themed around animation, comic, and game (ACG). It has a special feature—a real-time commentary subtitle system that displays user comments as streams of moving subtitles overlaid on the video playback screen. Such subtitles are simultaneously broadcast to all viewers in real-time, creating a chat room experience in which users feel like watching and playing together with others.
+          </p>
+          <br />
+          <img src="../../images/12/bilibili.gif" class="process" alt="" style="width: 450px;">
+          <p class="process">On-time bullet screen comments fly from right to left on the screen.</p>
           <br>
 
-          <ul style="margin:0 10%;">
-            <li><a href="http://www.datasketch.es/june/code/nadieh/">Fifty chapters of adorable cuteness Cardcaptor Sakura</a> by Nadieh Bremer
-              <p>It’s a data viz project of the anime Cardcaptor Sakura. I loved to watch Cardcaptor Sakura when I was young. I love she used different colors to reveal different characters. And the lines among the main characters also present their relationship. She did very well in bubble charts, which inspired me to show characters’ relationships through bubbles.</p>
-              <a href="http://www.datasketch.es/june/code/nadieh/"><img src="../../images/12/pre1.png" class="process" alt=""></a>
-              <p></p>
-            </li>
-            <br />
-            <li><a href="https://poetrybetweenpain.deb.is/">Anne Sexton: Poetry Between Pain</a> by Deb Pang Davis
-              <p>Deb is my classmate and a brilliant data-driven storyteller. She did text and sentiment analysis of Anne Sexton’s book series. Then she told us the story behind the data. Because The Twelve Kingdoms originally are a series of fantasy novels wrote by Fuyumi Ono.</p>
-              <p>Deb’s work reminded me that I can do text analysis of The Twelve Kingdoms.</p>
-              <a href="https://poetrybetweenpain.deb.is/"><img src="../../images/12/pre2.png" class="process" alt=""></a>
-            </li>
-          </ul>
+          <p>The Twelve Kingdoms has over 4,437,000 views on Bilibili. Over 106,000 screen bullets will stay with you when you watch the anime. Due to the unique feature on Bilibili, I can drag and analyze the data of <strong>on-time bullet comments</strong> and <strong>bottom comments</strong> from the anime on the website. Maybe I can even compare the difference between the comments from the website and the findings of the text analysis of the book series. Well, the ideal is plump, the reality is very skinny. Quickly, I met tons of troubles.
+          </p>
+          <br />
+          <img src="../../images/12/8000.png" class="process" alt="" />
+          <p class="process">The data I scraped from Bilibili.</p>
         </div>
       </div>
 <div class="projectprocess1" >
@@ -87,7 +83,10 @@
       </div>
 
       <div class="mainarticle">
-        <p>Upper words are the processes how I decided to work on this project. And I still work on the data now. Keep working, keep fighting!</p>
+        <p>I met some troubles when I want to scrape mandarin from the website. Because it’s different from English.And this website needs VPN to load comments.</p>
+        <p>Luckily, I found library pandas can help me scrape mandarin. And I asked my friend in China to run the code to solve the VPN problem.</p>
+        <p>Another problem is I have no idea how to do n-gram in Python. Even though I watched some tutorials, it’s still so hard for me to understand.</p>
+        <p>Fortunately, Deb recommended the book <em><a href="https://www.tidytextmining.com/ngrams.html">Text Mining with R</a></em> to me. Do n-gram by R is much easier. In this way, I successfully found out the relationships between characters, and words.</p>
       </div>
 </div>
 
